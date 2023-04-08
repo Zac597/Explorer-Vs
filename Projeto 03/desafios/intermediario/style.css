@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #EFEFEF;
+  font-family: 'poppins', sans-serif;
+}
+
+body::before {
+  content: '';
+  width: 100%;
+  height: 436px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  position: absolute;
+  background-color: #535971;
+
+}
+
+#page {
+  width: 750px;
+  margin: auto;
+}
+
+.cabeçalho {
+  color: #fff;
+  width: 417px;
+  margin-top: 74px;
+}
+
+.cabeçalho h1 {
+  font-weight: 400;
+  font-family: 'Staatliches';
+  font-size: 48px;
+  line-height: 60px;
+  margin-bottom: 18px;
+}
+
+.cabeçalho p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  margin-top: 58px;
+  background-color: #FAFAFC;
+  min-height: 300px;
+  border-radius: 8px 8px 0 0;
+  padding: 64px;
+}
+
+fieldset {
+  border: none ;
+}
+
+.fildset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.fildset-wrapper h1 {
+  font-size: 20px;
+  line-height: 34px;
+  font-family: 'Staatliches';
+  color: #535971;
+  font-weight: 400;
+}
+
+.fildset-wrapper legend {
+  font-family: 'Staatliches';
+  font-size: 24px;
+  line-height: 34px;
+  color: #535971;
+  border-bottom: 1px solid #EFEFEF;
+  margin-bottom: 36px;
+  padding-bottom: 16px;
+}
+
+.wrapper-name {
+  display: flex;
+  gap: 22px;
+}
+
+.input-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.input-wrapper span {
+  font-size: 12px;
+  line-height: 20px;
+  color: #C1BBCC;
+  padding: 9.12px;
+}
+
+.input-wrapper input {
+  
+  background: #FAFAFC;
+  height: 56px;
+  border-radius: 8px;
+  border: 1px solid #E6E6F0;
+} 
+
+.wrapper-time{
+  display: flex;
+  gap: 20px;
+}
+
+.wrapper-time > div:nth-child(1) {
+  width: 100%;
+}
+
+.wrapper-time > div:nth-child(2) {
+  width: 50%;
+}
+
+.wrapper-time > div:nth-child(3) {
+  width: 50%;
+}
+
+.input-wrapper {
+  appearance: none;
+}
+
+footer {
+    height: 160px ;
+    background-color: #535971;
+    border-radius: 0 0 8px 8px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+footer input {
+  height: 56px;
+  width: 608px;
+  margin: auto;
+  border-radius: 8px;
+  background: #FF5374;
+  color: #FFF;
+  border: none;
+  font-family:'Staatliches';
+  font-size: 20px;
+  line-height: 26px;
+}
