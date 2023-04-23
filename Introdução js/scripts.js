@@ -98,6 +98,7 @@ const john = {
   name : "john",
   age : 21,
   weight : 86.9,
+  
 }
 
 students[1] = john
