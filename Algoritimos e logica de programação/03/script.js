@@ -1,26 +1,14 @@
-/*
-  Capturar 2 números e fazer as operações matemáticas
-  de soma, subtração, multiplicação, divisão e resto da divisão
+Aluno = prompt('Qual o seu nome?')
+nota1 = prompt('Qual foi sua primeira nota?')
+nota2 = prompt('Qual foi sua segunda nota?')
+nota3 =prompt('Qual foi sua terceira nota?')
 
-  E para cada operação mostrar o resultado 
+media = (Number(nota1) + Number(nota2) + Number(nota3))/3
+results = media > 6
+media = media.toFixed(2)
 
-*/
-
-
-let numberOne = prompt("Digite o número 1: ")
-let numberTwo = prompt("Digite o número 2")
-numberOne = Number(numberOne)
-numberTwo = Number(numberTwo)
-
-const sum = numberOne + numberTwo
-const sub = numberOne = numberTwo
-const mult = numberOne * numberTwo
-const div = numberOne / numberTwo
-const rest = numberOne % numberTwo
-
-
-alert("O da soma é " + sum)
-alert("O da subtração é " + sub)
-alert("O da multiplicação é " + mult)
-alert("O da divisão é " + div)
-alert("O resto da divisão é " + rest)
+if (results) {
+  alert('Parabéns ' + Aluno + '! você passou com uma média de: ' + media)
+} else {
+  alert('Putz, acredito em vc estude mais na próxima, sua média foi de: ' + media)
+}

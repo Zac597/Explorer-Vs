@@ -1,17 +1,12 @@
 /*
-  Encontre a solução ao problema:
-
-  Pergunte o nome do usuário e escreva a mensagem:
-  "Olá, [nome do usuário]"
-
-  Como resolver problemas na linguagem de programação
-
-  Como melhorar minha lógica de programação
-
-  1-Identifique o que já sabe e faça
-  2-Quebre o grande problema em prblemas menores
+  Solicite 2 números, faça a soma deles
+  e apresente o resultado final ao usuário
 
 */
 
-let nome = prompt("Qual o seu nome?")
-alert("Olá, " + nome)
+alert("Iremos somar 2 números")
+let numberOne = prompt("Digite o número 1: ")
+let numberTwo = prompt("Digite o número 2")
+let results = Number(numberOne) + Number(numberTwo)
+
+alert("Resultado Final: " + results/2)
