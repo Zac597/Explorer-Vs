@@ -21,13 +21,15 @@ const alunos = [
 },
 ]
 
-
-const mediaNotes = (aluno) => {
-  return `O aluno(a) ${aluno.name} possui uma média de:
-  ${(aluno.fNote + aluno.sNote) / 2}`
+function mediaNotes(fNote,sNote) {
+  let media = (fNote + sNote) / 2
+  return media
 }
 
+
 for (let aluno of alunos) {
-  let mediaMessage = mediaNotes(aluno)
-  alert(mediaMessage)
+  mediaAluno = mediaNotes(aluno.fNote, aluno.sNote)
+  let passouOuNao = mediaAluno <7 ? 'Infelizmente não conseguiu dessa vez. Tente de novo na recuperação' : 'Parabéns você passou direto'
+
+  alert(`A média de ${aluno.name} é ${mediaAluno}. ${passouOuNao}`)
 }
