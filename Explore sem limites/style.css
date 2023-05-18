@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  font-size: 62.5%
+}
+
+input, button, textarea {
+  font-family: "Mulish" ;
+}
+
+body {
+  width: 43rem;
+  margin: 0 auto;
+  font-family: "Mulish" ;
+  background: rgb(173, 189, 173);
+}
+
+header {
+  text-align: center;
+  background-color: #FFF;
+}
+
+header h1 {
+  margin-top: 1.7rem;
+  font-size: 3.2rem;
+  font-weight: 90rem;
+  color: #B52184;
+}
+
+header p {
+  font-size: 2rem;
+  font-weight: 60rem;
+  color: #312D64;
+  margin-bottom: 3.5rem;
+}
+
+header button {
+  margin-bottom: 9.3rem;
+}
+
+main {
+  background: linear-gradient(96.21deg, #343193 0%, #302C63 99.68%);
+
+  padding: 5.3rem 3.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+
+.content {
+  background: #FFF;
+  border-radius: 2rem;
+  width: 32.5rem;
+  padding: 2.65rem;
+  padding-right: 6rem;
+}
+
+.content h2{
+  font-size: 3rem;
+  color: #B52184;
+  font-weight: 90rem;
+  margin: 3.3rem 0 1.9rem;
+}
+
+.content p {
+  font-size: 1.6rem;
+  font-weight: 60rem;
+  color: #312D64;
+}
+
+form .conteudo{
+  padding: 7.8rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+
+  background: #fff;
+}
+
+form h2 {
+  font-size: 3.2rem;
+  font-weight: 90rem;
+  line-height: 4rem;
+  color: #B52184;
+}
+
+form input, textarea {
+  padding: 1.3rem;
+  border: 0.1rem solid black;
+  border-radius: 1.1rem;
+}
+
+form .button {
+  width: 15rem;
+  padding: 1.5rem 1.6rem;
+
+  border: none;
+  font-weight: 70rem;
+  font-size: 1.4rem;
+  color: #ffffff;
+  background: linear-gradient(96.21deg, #343193 0%, #302C63 99.68%);
+  border-radius: 16px;
+}
+
+footer {
+  padding: 3.2rem 1.6rem;
+
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 60rem;
+  background: linear-gradient(96.21deg, #343193 0%, #302C63 99.68%);
+  color: #FFF;
+}
+
+@media (min-width: 1200px) {
+  body {
+    width: auto;
+  }
+  header{
+
+    display: flex;
+    flex-direction:row-reverse ;
+    justify-content: space-around;
+    padding-bottom: 10rem;
+    position: relative;
+  }
+
+  header h1 {
+    font-size: 5.8rem
+  }
+
+  header p {
+    font-size: 3.2rem;
+  }
+
+  header .text {
+    margin-top: 15.7rem;
+  }
+
+  header button {
+    left: 12.3rem;
+    top: 31.25rem;
+    position: absolute;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  main .content {
+    width: 36.6rem;
+    height: 44.8rem;
+  }
+
+  main .content h2{
+    font-size: 3.5rem;
+  }
+
+  main .content p {
+    font-size: 1.9rem;
+  }
+
+  form {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  form .conteudo{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.6rem;
+
+    padding: 9.5rem;
+  }
+
+  form .conteudo h2 {
+    font-size: 4.2rem;
+  }
+
+  form .background{
+    height: auto;
+    width: 64rem;
+    background-image: url(imgs/back.jpg);
+  }
+}
