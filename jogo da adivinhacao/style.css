@@ -22,7 +22,7 @@ body, button, input {
   
 }
 
-buttton {
+button {
   background-color: #7879F1;
   color: white;
   font-weight: bold;
@@ -33,6 +33,7 @@ buttton {
 
 button:hover {
   background-color: #6363CE;
+  cursor: pointer;
 }
 
 .hide {
