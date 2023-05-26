@@ -7,7 +7,7 @@ let randomNumber = Math.round(Math.random() * 10)
 let xAttempts = 1
 
 //Eventos
-btnTry.addEventListener('click1', handleTryClick)
+btnTry.addEventListener('click', handleTryClick)
 btnReset.addEventListener('click', handleResetClick)
 
 //Funções (callback)
