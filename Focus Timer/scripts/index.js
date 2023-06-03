@@ -9,7 +9,8 @@ import {
   buttonSoundOn,
   buttonSoundOff,
   minutesDisplay,
-  secondsDisplay
+  secondsDisplay,
+  body
 } from "./elements.js"
 
 

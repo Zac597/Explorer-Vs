@@ -6,6 +6,8 @@ const buttonSoundOn = document.querySelector('.sound-on')
 const buttonSoundOff = document.querySelector('.sound-off')
 const minutesDisplay = document.querySelector('.minutes')
 const secondsDisplay = document.querySelector('.seconds')
+const buttonForest = document.querySelector('.buttonForest')
+const body = document.querySelector('body')
 
 export {
   buttonPlay,
@@ -15,5 +17,7 @@ export {
   buttonSoundOn,
   buttonSoundOff,
   minutesDisplay,
-  secondsDisplay
+  secondsDisplay,
+  buttonForest,
+  body
 }
