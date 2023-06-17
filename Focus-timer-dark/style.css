@@ -10,6 +10,7 @@
   --bg-primary-light: hsla(var(--base-color), 100%, 63%, 0.13);
   --primary-color: hsl(var(--base-color), 100%, 63%);
   --text-color: #FFFFFF;
+  --pd-color: #323232;
 
   font-size: 62.5%;
 }
@@ -22,6 +23,13 @@ body {
 
   display: grid;
   min-height: 100vh;
+}
+
+header .tema-escuro, .tema-claro {
+  position: absolute;
+  right: 6rem;
+  top: 6rem;
+  cursor: pointer;
 }
 
 main {
@@ -78,12 +86,78 @@ button img {
   margin: 6px;
 }
 
-.environment button:hover {
-  background-color: #02799D;
+.environment input {
+  width: 12rem;
+  position: absolute;
+  margin-left: -13.8rem;
+  margin-top: 13.5rem;
 }
+
+input[type="range"] {
+  -webkit-appearance: none;
+  
+  width: clamp(12rem, 8vw, 9rem);
+  cursor: pointer;
+
+  background: transparent;
+
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  
+  width: clamp(6rem, 7vw, 9rem);
+  height: clamp(.3rem, .3vw, .4rem);
+  border-radius: .5rem;
+
+  background-color: var(--pd-color);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  
+  width: clamp(1.1rem, 1.3vw, 1.6rem);
+  height: clamp(1.1rem, 1.3vw, 1.6rem);
+  border-radius: 50%;
+  
+  background-color: var(--pd-color);
+
+  position: relative;
+  top: calc(50% - clamp(1.1rem, 1.3vw, 1.6rem) / 2);
+}
+
+
 
 footer {
   justify-self: end;
   align-self: end;
   padding:0 4rem 3.2rem 0;
+}
+
+.dark-mode input[type="range"]::-webkit-slider-thumb{
+  background-color: white;
+}
+
+.dark-mode input[type="range"]::-webkit-slider-runnable-track {
+  background-color: white;
+}
+
+body.dark-mode {
+  background-color: black;
+}
+
+.dark-mode .timer {
+  color: white;
+}
+
+.dark-mode .environment button {
+  background-color: #29292E;
+}
+
+.dark-mode .functions path{
+  fill: white;
+}
+
+.dark-mode .environment path {
+  fill: white;
 }

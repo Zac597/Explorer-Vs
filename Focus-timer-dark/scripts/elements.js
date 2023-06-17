@@ -29,6 +29,5 @@ export {
   Fire,
   body,
   moreMinutes,
-  anyLess
-
+  anyLess,
 }

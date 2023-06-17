@@ -16,7 +16,7 @@ import {
   Fire,
   body,
   moreMinutes,
-  anyLess
+  anyLess,
 } from "./elements.js"
 
 
@@ -91,14 +91,9 @@ moreMinutes.addEventListener('click', () => {
   timer.updateMinutes(newMinutes)
 })
 
-anyLess.addEventListener('click', () => {
-  
-})
-
 // Fundos
 
 Forest.addEventListener('click',() => {
-  body.style.backgroundColor='#016D55';
   sound.audioForest.play()
   sound.audioFogo.pause()
   sound.audioCommerce.pause()
@@ -106,7 +101,6 @@ Forest.addEventListener('click',() => {
 }) 
 
 Fire.addEventListener('click',() => {
-  body.style.backgroundColor='#F4A84D';
   sound.audioFogo.play()
   sound.audioForest.pause()
   sound.audioCommerce.pause()
@@ -114,7 +108,6 @@ Fire.addEventListener('click',() => {
 }) 
 
 Commerce.addEventListener('click',() => {
-  body.style.backgroundColor='#CEC1B0';
   sound.audioCommerce.play()
   sound.audioForest.pause()
   sound.audioFogo.pause()
@@ -122,7 +115,6 @@ Commerce.addEventListener('click',() => {
 }) 
 
 Rain.addEventListener('click',() => {
-  body.style.backgroundColor='#C6D7DA';
   sound.audioChuva.play()
   sound.audioForest.pause()
   sound.audioCommerce.pause()
@@ -140,4 +132,21 @@ anyLess.addEventListener('click', () => {
   controls.reset()
   timer.anyLess()
   sound.pressButton()
+})
+
+const claro = document.querySelector('.tema-claro')
+const escuro = document.querySelector('.tema-escuro')
+
+function changeTheme() {
+  claro.classList.toggle('hide')
+  escuro.classList.toggle('hide')
+  body.classList.toggle('dark-mode')
+}
+
+claro.addEventListener('click', () => {
+  changeTheme()
+})
+
+escuro.addEventListener('click', () => {
+  changeTheme()
 })
